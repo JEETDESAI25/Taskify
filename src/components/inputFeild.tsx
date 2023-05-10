@@ -2,8 +2,8 @@ import React from "react";
 import "./styles.css";
 const InputFeild = () => {
   return (
-    <form className="inputFeild">
-      <input type="input" className="input__box" placeholder="Enter a task" />
+    <form className="input">
+      <input type="input" placeholder="Enter a task" className="input__box" />
       <button className="input_submit" type="submit">
         GO
       </button>
