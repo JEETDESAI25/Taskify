@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "./App.css";
-import InputField from "./components/inputField";
-import { Todo } from "./components/model";
+import './App.css';
+import InputField from './components/inputField';
+import { Todo } from './components/model';
 
 const App: React.FC = () => {
-  const [todo, setTodo] = useState<string>("");
+  const [todo, setTodo] = useState<string>('');
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const handleAdd = (e: React.FormEvent) => {
@@ -13,12 +13,12 @@ const App: React.FC = () => {
 
     if (todo) {
       setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
-      setTodo("");
+      setTodo('');
     }
   };
   return (
-    <div className="App">
-      <span className="heading">Taskify</span>
+    <div className='App'>
+      <span className='heading'>Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
       {/* <TodoList/> */}
     </div>
