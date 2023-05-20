@@ -27,5 +27,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-// Video time : 38mins
