@@ -45,6 +45,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
     <form className='todos__single' onSubmit={(e) => handleEdit(e, todo.id)}>
       {edit ? (
         <input
+          title='edit todo'
           ref={inputRef}
           value={editTodo}
           onChange={(e) => setEditTodo(e.target.value)}
@@ -78,3 +79,5 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 };
 
 export default SingleTodo;
+
+// vido timestamp: 1:00:00
